@@ -3,7 +3,9 @@
 A minimalistic, blazingly fast DNS server written in Rust.
 
 ## Use Cases
-    + FirewallProxy 
+
+    + Firewall
+    + Proxy 
 
 ## DNSFeatures
 
