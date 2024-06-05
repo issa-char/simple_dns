@@ -137,15 +137,15 @@ impl BytePktBuff {
 
 
     pub fn write_u16(&mut self, val:u16) -> Result<()> {
-        self.write(val >> 8) as u8)?;
-        self.write(val & 0xFF) as u8)?;
+        self.write((val >> 8) as u8)?;
+        self.write((val & 0xFF) as u8)?;
 
         ok(())
     }
 
     pub fn write_u32(&mut self, val: u32) -> Result<()> {
         self.write(((val >> 24) & 0xFF) as u8)?;
-        self.write((val >> 16) & 0xFF) as u8)?;
+        self.write(((val >> 16) & 0xFF) as u8)?;
         self.write(((val >> 8) & 0xFF) as u8)?;
         self.write(((val >> 0) & 0xFF) as u8)?;
 

@@ -1,7 +1,7 @@
 use std::net::Ipv4Addr;
 
 use super::{
-    byte_packet_buffer::BytePacketBuffer, dns_header::DnsHeader, dns_question::DnsQuestion,
+   B_pkt_buf::BytePktBuff, dns_header::DnsHeader, dns_question::DnsQuestion,
     dns_record::DnsRecord, query_type::QueryType, Result,
 };
 

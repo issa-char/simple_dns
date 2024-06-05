@@ -1,5 +1,5 @@
 use crate::logs::set_logger;
-use crate config::config
+use crate::config::Config;
 
 
 
